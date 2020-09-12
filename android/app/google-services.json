@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "701371769717",
+    "firebase_url": "https://newsusnetwork.firebaseio.com",
+    "project_id": "newsusnetwork",
+    "storage_bucket": "newsusnetwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701371769717:android:cb0285c200fbb4d179a93c",
+        "android_client_info": {
+          "package_name": "com.FOSShacknewsUS.NewsUs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701371769717-boomne8g6k2mcmghs64fjhiiqp1hqi3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.FOSShacknewsUS.NewsUs",
+            "certificate_hash": "483f6f91c8a060805cae4597b4278af8be2b387b"
+          }
+        },
+        {
+          "client_id": "701371769717-21hskn1sumadv6nruatukl5qnomnh2kj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1B0MMkv5Er7NtZ-9iY1y3cIKdaFAHlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701371769717-21hskn1sumadv6nruatukl5qnomnh2kj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
