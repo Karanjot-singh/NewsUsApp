@@ -1,4 +1,5 @@
 
+import 'package:NewsUs/newsList.dart';
 import 'package:flutter/material.dart';
 import 'categoryHead.dart';
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       //   textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
       //   visualDensity: VisualDensity.adaptivePlatformDensity,
       // ),
-      home: Concentric(),
+      home: newsList(),
+      //Concentric(),
 
     );
   }

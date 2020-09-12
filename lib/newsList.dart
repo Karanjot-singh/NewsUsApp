@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 class newsList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: newsListItems());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: newsListItems());
   }
 }
 
@@ -16,6 +18,7 @@ class newsListItems extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurpleAccent,
         body: Center(
             child: ExpansionCard(
               //gif: 'assets/animations/planets.gif',
@@ -28,13 +31,14 @@ class newsListItems extends StatelessWidget{
                       style: TextStyle(
                         //fontFamily: 'BalooBhai',
                         fontSize: 30,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                     Text(
                       "Sub",
                       style: TextStyle(
-                        //fontFamily: 'BalooBhai', fontSize: 20, color: Colors.white
+                        //fontFamily: 'BalooBhai',
+                        fontSize: 20, color: Colors.black
                       ),
                     ),
                   ],
@@ -47,7 +51,7 @@ class newsListItems extends StatelessWidget{
                       style: TextStyle(
                         //fontFamily: 'BalooBhai',
                           fontSize: 20,
-                          color: Colors.white)),
+                          color: Colors.black)),
                 )
               ],
             )));
