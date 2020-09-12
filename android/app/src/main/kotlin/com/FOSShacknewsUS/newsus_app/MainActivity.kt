@@ -1,4 +1,4 @@
-package com.FOSShacknewsUS.newsus_app
+package com.FOSShacknewsUS.NewsUs
 
 import io.flutter.embedding.android.FlutterActivity
 

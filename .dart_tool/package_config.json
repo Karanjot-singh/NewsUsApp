@@ -140,13 +140,13 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "newsus_app",
+      "name": "NewsUs",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-09-12T07:19:21.916932Z",
+  "generated": "2020-09-12T07:30:44.556225Z",
   "generator": "pub",
   "generatorVersion": "2.9.1"
 }
