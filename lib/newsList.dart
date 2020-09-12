@@ -31,7 +31,10 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
         child: Stack(
           children: [
             ExpansionCard(
-            //gif: 'assets/animations/planets.gif',
+              background: Image.asset(
+                "gifs/planet.gif",
+                fit: BoxFit.cover,
+              ),
             title: Container(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

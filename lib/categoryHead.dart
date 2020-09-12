@@ -64,6 +64,7 @@ class Concentric extends StatelessWidget {
                   child: Container(
                       color: Colors.transparent,
                       child: Scaffold(
+                        backgroundColor: Colors.transparent,
                       body: newsList(),
                     )
 
