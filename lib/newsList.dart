@@ -35,22 +35,23 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
                 "gifs/planet.gif",
                 fit: BoxFit.cover,
               ),
-            title: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+              title: Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
                   Text(
                     "Header",
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                   ),
                   Text(
                     "Sub",
                     style: TextStyle(
                         fontSize: 20,
-                        color: Colors.black),
+                        color: Colors.white
+                    ),
                   ),
                 ],
               ),
@@ -61,7 +62,9 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
                 child: Text("Content goes over here !",
                     style: TextStyle(
                         fontSize: 20,
-                        color: Colors.black)),
+                        color: Colors.white
+                    )
+                ),
               )
             ],
           ),
