@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cloud_firestore:
   concentric_transition: ^0.1.1
   expansion_card: ^0.1.0
 
