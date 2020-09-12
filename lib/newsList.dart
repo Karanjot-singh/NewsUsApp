@@ -8,17 +8,73 @@ class newsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: newsListItems(),
+      home: ListViewBuilder(),
     );
   }
 }
 
+
+
+class ListViewBuilder extends StatefulWidget {
+  @override
+  _ListViewBuilderState createState() => _ListViewBuilderState();
+}
+
+
+
+class _ListViewBuilderState extends State<ListViewBuilder> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: Container(
+        child: Stack(
+          children: [
+            ExpansionCard(
+            //gif: 'assets/animations/planets.gif',
+            title: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Header",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    "Sub",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 7),
+                child: Text("Content goes over here !",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black)),
+              )
+            ],
+          ),
+    ]
+      ),
+      ),
+    );
+  }
+}
+
+/*
 // ignore: camel_case_types
 class newsListItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurpleAccent,
       body: Center(
         child: ExpansionCard(
           //gif: 'assets/animations/planets.gif',
@@ -29,7 +85,6 @@ class newsListItems extends StatelessWidget {
                 Text(
                   "Header",
                   style: TextStyle(
-                    //fontFamily: 'BalooBhai',
                     fontSize: 30,
                     color: Colors.black,
                   ),
@@ -37,7 +92,6 @@ class newsListItems extends StatelessWidget {
                 Text(
                   "Sub",
                   style: TextStyle(
-                      //fontFamily: 'BalooBhai',
                       fontSize: 20,
                       color: Colors.black),
                 ),
@@ -49,7 +103,6 @@ class newsListItems extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 7),
               child: Text("Content goes over here !",
                   style: TextStyle(
-                      //fontFamily: 'BalooBhai',
                       fontSize: 20,
                       color: Colors.black)),
             )
@@ -59,3 +112,5 @@ class newsListItems extends StatelessWidget {
     );
   }
 }
+
+ */
