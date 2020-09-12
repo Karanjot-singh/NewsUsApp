@@ -1,4 +1,3 @@
-
 import 'package:NewsUs/newsList.dart';
 import 'package:flutter/material.dart';
 import 'categoryHead.dart';
@@ -23,7 +22,6 @@ class MyApp extends StatelessWidget {
       // ),
       home: newsList(),
       //Concentric(),
-
     );
   }
 }

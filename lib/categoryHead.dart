@@ -3,7 +3,7 @@ import 'package:concentric_transition/concentric_transition.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TileData{
+class TileData {
   final String title;
   final IconData icon;
   final Color bgColor;
@@ -25,13 +25,11 @@ class Concentric extends StatelessWidget {
       textColor: Colors.white,
       bgColor: Color(0xFFFDBFDD),
     ),
-
     TileData(
       icon: Icons.hdr_weak,
       title: "News Category 2",
       bgColor: Color(0xFFFFFFFF),
     ),
-
     TileData(
       icon: Icons.bubble_chart,
       title: "News Category 3",
@@ -46,7 +44,6 @@ class Concentric extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: Scaffold(
         body: ConcentricPageView(
           colors: colors,
@@ -57,7 +54,6 @@ class Concentric extends StatelessWidget {
           duration: Duration(seconds: 3),
           verticalPosition: 0.7,
           direction: Axis.vertical,
-
           itemBuilder: (index, value) {
             TileData page = pages[index % pages.length];
             // For example scale or transform some widget by [value] param
@@ -90,18 +86,13 @@ class Concentric extends StatelessWidget {
   }
 }
 
-
-
 class TileCard extends StatelessWidget {
-
   final TileData page;
 
   const TileCard({
     Key key,
     @required this.page,
   }) : super(key: key);
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -119,27 +110,20 @@ class TileCard extends StatelessWidget {
     );
   }
 
-
-
   Widget _buildText(BuildContext context) {
-
     return Text(
       page.title,
       style: Theme.of(context).textTheme.title,
       textAlign: TextAlign.center,
     );
-
   }
 
   Widget _buildPicture(
-
-      BuildContext context, {
-        double size = 190,
-        double iconSize = 170,
-      }) {
+    BuildContext context, {
+    double size = 190,
+    double iconSize = 170,
+  }) {
     return Container(
-
-
       width: size,
       height: size,
       decoration: BoxDecoration(
@@ -152,14 +136,10 @@ class TileCard extends StatelessWidget {
       margin: EdgeInsets.only(
         top: 140,
       ),
-
-
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-
           Positioned.fill(
-
             child: RotatedBox(
               quarterTurns: 2,
               child: Icon(
@@ -173,7 +153,6 @@ class TileCard extends StatelessWidget {
             right: -5,
             bottom: -5,
           ),
-
           Positioned.fill(
             child: RotatedBox(
               quarterTurns: 5,
