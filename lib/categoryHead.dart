@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'newsList.dart';
 
-class TileData{
+class TileData {
   final Color bgColor;
   final Color textColor;
 
@@ -21,11 +21,9 @@ class Concentric extends StatelessWidget {
       textColor: Colors.white,
       bgColor: Color(0xFFFDBFDD),
     ),
-
     TileData(
       bgColor: Color(0xFFFFFFFF),
     ),
-
     TileData(
       bgColor: Color(0xFF0043D0),
       textColor: Colors.white,
@@ -38,7 +36,6 @@ class Concentric extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: Scaffold(
         body: ConcentricPageView(
           colors: colors,
@@ -49,33 +46,25 @@ class Concentric extends StatelessWidget {
           duration: Duration(seconds: 3),
           verticalPosition: 0.8,
           direction: Axis.vertical,
-
           itemBuilder: (index, value) {
             TileData page = pages[index % pages.length];
             // For example scale or transform some widget by [value] param
             //            double scale = (1 - (value.abs() * 0.4)).clamp(0.0, 1.0);
 
             return Stack(
-
               children: [
-
                 Padding(
-                  padding: const EdgeInsets.only(top: 25, left: 35, right: 35, bottom: 150),
+                  padding: const EdgeInsets.only(
+                      top: 25, left: 35, right: 35, bottom: 150),
                   child: Container(
                       color: Colors.transparent,
                       child: Scaffold(
                         backgroundColor: Colors.transparent,
-                      body: newsList(),
-                    )
-
-
-
-                  ),
-
+                        body: newsList(),
+                      )),
                 )
               ],
             );
-
           },
         ),
       ),
@@ -83,18 +72,13 @@ class Concentric extends StatelessWidget {
   }
 }
 
-
-
 class TileCard extends StatelessWidget {
-
   final TileData page;
 
   const TileCard({
     Key key,
     @required this.page,
   }) : super(key: key);
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +95,4 @@ class TileCard extends StatelessWidget {
       ),
     );
   }
-
-
-
 }

@@ -13,14 +13,10 @@ class newsList extends StatelessWidget {
   }
 }
 
-
-
 class ListViewBuilder extends StatefulWidget {
   @override
   _ListViewBuilderState createState() => _ListViewBuilderState();
 }
-
-
 
 class _ListViewBuilderState extends State<ListViewBuilder> {
   @override
@@ -28,17 +24,16 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Container(
-        child: Stack(
-          children: [
-            ExpansionCard(
-              background: Image.asset(
-                "gifs/planet.gif",
-                fit: BoxFit.cover,
-              ),
-              title: Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
+        child: Stack(children: [
+          ExpansionCard(
+            background: Image.asset(
+              "gifs/planet.gif",
+              fit: BoxFit.cover,
+            ),
+            title: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
                   Text(
                     "Header",
                     style: TextStyle(
@@ -48,10 +43,7 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
                   ),
                   Text(
                     "Sub",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white
-                    ),
+                    style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
                 ],
               ),
@@ -60,16 +52,11 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 7),
                 child: Text("Content goes over here !",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white
-                    )
-                ),
+                    style: TextStyle(fontSize: 20, color: Colors.white)),
               )
             ],
           ),
-    ]
-      ),
+        ]),
       ),
     );
   }
