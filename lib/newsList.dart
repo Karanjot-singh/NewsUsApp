@@ -1,6 +1,8 @@
+import 'package:NewsUs/helper/data.dart';
 import 'package:expansion_card/expansion_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:NewsUs/models/news_article.dart';
 
 // ignore: camel_case_types
 class newsList extends StatelessWidget {
@@ -23,6 +25,7 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
+<<<<<<< HEAD
       body: Column(
         children:[
           
@@ -64,6 +67,44 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
         ),
         ],
       ),
+=======
+      // body: Container(
+      //   child: Stack(children: [
+      //     ExpansionCard(
+      //       // background: Image.asset(
+      //       //   "gifs/planet.gif",
+      //       //   fit: BoxFit.cover,
+      //       // ),
+      //       title: Container(
+      //         child: Column(
+      //           crossAxisAlignment: CrossAxisAlignment.start,
+      //           children: <Widget>[
+      //             Text(
+      //               "Header",
+      //               style: TextStyle(
+      //                 fontSize: 30,
+      //                 color: Colors.white,
+      //               ),
+      //             ),
+      //             Text(
+      //               "Sub",
+      //               style: TextStyle(fontSize: 20, color: Colors.white),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //       children: <Widget>[
+      //         Container(
+      //           margin: EdgeInsets.symmetric(horizontal: 7),
+      //           child: Text("Content goes over here !",
+      //               style: TextStyle(fontSize: 20, color: Colors.white)),
+      //         )
+      //       ],
+      //     ),
+      //   ]),
+      // ),
+      body:Data()
+>>>>>>> 72a041d623e919fe8c1a42638acb2aeceebb3bfa
     );
   }
 }
