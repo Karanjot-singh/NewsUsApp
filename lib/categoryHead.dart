@@ -30,7 +30,7 @@ class Concentric extends StatelessWidget {
     ),
     TileData(
       title: "Sports",
-      bgColor: Colors.white,
+      bgColor: Colors.blue,
       textColor: Colors.black,
     ),
     TileData(
