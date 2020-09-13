@@ -1,5 +1,4 @@
 import 'package:concentric_transition/concentric_transition.dart';
-import 'package:expansion_card/expansion_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,15 +18,20 @@ class Concentric extends StatelessWidget {
   final List<TileData> pages = [
     TileData(
       textColor: Colors.white,
-      bgColor: Color(0xFFFDBFDD),
+      bgColor: Color(0xffb1006a),
     ),
     TileData(
-      bgColor: Color(0xFFFFFFFF),
-    ),
-    TileData(
-      bgColor: Color(0xFF0043D0),
+      bgColor: Color(0xff00B147),
       textColor: Colors.white,
     ),
+    TileData(
+      bgColor: Colors.white,
+      textColor: Colors.black,
+    ),
+    TileData(
+      bgColor: Color(0xFF3C4046),
+      textColor: Colors.white
+    )
   ];
 
   List<Color> get colors => pages.map((p) => p.bgColor).toList();
@@ -44,7 +48,7 @@ class Concentric extends StatelessWidget {
           radius: 250,
           curve: Curves.ease,
           duration: Duration(seconds: 3),
-          verticalPosition: 0.8,
+          verticalPosition: 0.9,
           direction: Axis.vertical,
           itemBuilder: (index, value) {
             TileData page = pages[index % pages.length];
@@ -55,7 +59,7 @@ class Concentric extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(
-                      top: 25, left: 35, right: 35, bottom: 150),
+                      top: 25, left: 35, right: 35, bottom: 80),
                   child: Container(
                       color: Colors.transparent,
                       child: Scaffold(
