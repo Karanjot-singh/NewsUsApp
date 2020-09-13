@@ -101,7 +101,7 @@ class TileCard extends StatelessWidget
                 //SizedBox(height: 80,),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 35, right: 35),
+                  padding: const EdgeInsets.only(left: 15, right: 15),
                   child: Container(
                     height: 550,
                       color: Colors.transparent,
