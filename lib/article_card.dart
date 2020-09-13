@@ -7,14 +7,15 @@ class ArticleCard extends StatelessWidget {
   String description;
   String imgurl;
   String url;
-  ArticleCard(this.title, this.description, this.url, this.imgurl);
+  String source;
+  ArticleCard(this.title,this.source, this.description, this.url, this.imgurl);
   @override
   Widget build(BuildContext context) {
     return ExpansionCard(
-      background: Image.network(
-        imgurl,
-        fit: BoxFit.cover,
-      ),
+      // background: Image.network(
+      //   imgurl,
+      //   fit: BoxFit.cover,
+      // ),
       title: Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,12 +24,12 @@ class ArticleCard extends StatelessWidget {
               title,
               style: TextStyle(
                 fontSize: 30,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
             Text(
-              description,
-              style: TextStyle(fontSize: 20, color: Colors.white),
+              source,
+              style: TextStyle(fontSize: 20, color: Colors.green),
             ),
           ],
         ),
@@ -37,7 +38,7 @@ class ArticleCard extends StatelessWidget {
         Container(
           margin: EdgeInsets.symmetric(horizontal: 7),
           child: Text(description,
-              style: TextStyle(fontSize: 20, color: Colors.white)),
+              style: TextStyle(fontSize: 20, color: Colors.black)),
         )
       ],
     );
