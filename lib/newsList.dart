@@ -23,40 +23,46 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: Container(
-        child: Stack(children: [
-          ExpansionCard(
-            background: Image.asset(
-              "gifs/planet.gif",
-              fit: BoxFit.cover,
-            ),
-            title: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    "Header",
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    "Sub",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
+      body: Column(
+        children:[
+          
+           Container(
+          child: Stack(children: [
+            ExpansionCard(
+              background: Image.asset(
+                "gifs/planet.gif",
+                fit: BoxFit.cover,
               ),
+
+              title: Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Header",
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "Sub",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 7),
+                  child: Text("Content goes over here !",
+                      style: TextStyle(fontSize: 20, color: Colors.white)),
+                )
+              ],
             ),
-            children: <Widget>[
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 7),
-                child: Text("Content goes over here !",
-                    style: TextStyle(fontSize: 20, color: Colors.white)),
-              )
-            ],
-          ),
-        ]),
+          ]),
+        ),
+        ],
       ),
     );
   }
